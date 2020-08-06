@@ -127,6 +127,7 @@
 .blockdevelopment__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .blockdevelopment__content-text {
   max-width: 48.9rem;
@@ -188,6 +189,12 @@
 .blockscience__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.blockscience__list-table {
+  max-width: 35rem;
+  margin: 2rem auto 2rem auto;
 }
 .blockscience__list-table h2 {
   margin: 3rem 0 3rem 0;
@@ -216,9 +223,9 @@
 .blockproject-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 5rem;
 }
-
 .blockreview {
   min-height: 108rem;
   position: relative;

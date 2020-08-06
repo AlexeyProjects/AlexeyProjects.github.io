@@ -105,6 +105,7 @@
 		display: flex;
 		&__tables{
 			display: flex;
+
 			max-width: 35rem;
 			&-content{
 				display: flex;
@@ -129,6 +130,7 @@
 	&__content{
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		
 		&-text{
 			max-width: 48.9rem;
@@ -191,7 +193,14 @@
 	&__list{
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		margin:auto;
 		&-table{
+			max-width: 35rem;
+			margin: 2rem auto 2rem auto;
+			img{
+
+			}
 			h2{
 				margin:3rem 0 3rem 0;
 			}
@@ -199,6 +208,7 @@
 				font-size: 1.6rem;	
 				color: #999999;
 				margin-bottom: 3rem;
+
 			}
 		}
 	}
@@ -220,7 +230,11 @@
 	&-list{
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		margin-bottom: 5rem;
+		&-table{
+
+		}
 	}
 
 }
