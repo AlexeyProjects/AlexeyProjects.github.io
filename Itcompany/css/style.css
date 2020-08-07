@@ -1,6 +1,6 @@
 .blockstart {
-  width: 100%;
   height: 90rem;
+  width: 100%;
   background-image: url(../img/back-start.png);
 }
 .blockstart hr {
@@ -13,6 +13,7 @@
 .blockstart-header__nav-bar {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   list-style: none;
   width: 60rem;
 }
@@ -64,7 +65,8 @@
 
 .blockservices {
   text-align: center;
-  min-height: 70.3rem;
+  min-height: 65.3rem;
+  padding-bottom: 5rem;
 }
 .blockservices p {
   color: #999999;
@@ -84,7 +86,12 @@
 .blockservices-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   display: flex;
+}
+.blockservices-list__tables {
+  min-width: 32rem;
+  margin: auto;
 }
 .blockservices-list .icon-border {
   padding: 1rem;
@@ -129,6 +136,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.blockdevelopment__content img {
+  max-width: 100%;
+}
 .blockdevelopment__content-text {
   max-width: 48.9rem;
   margin-top: 5rem;
@@ -145,10 +155,12 @@
 .blockdevelopment__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .blockdevelopment__list-table {
   min-width: 7rem;
   text-align: center;
+  margin: auto;
 }
 .blockdevelopment__list-table p.number {
   display: inline-block;
@@ -179,6 +191,7 @@
   padding-top: 10rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 7rem;
 }
@@ -226,6 +239,10 @@
   flex-wrap: wrap;
   margin-bottom: 5rem;
 }
+.blockproject-list__table img {
+  box-shadow: 0px 20px 30px rgba(111, 111, 111, 0.6);
+}
+
 .blockreview {
   min-height: 108rem;
   position: relative;
@@ -285,7 +302,7 @@
 }
 .blockreview-mailing .input {
   margin: auto;
-  min-width: 40rem;
+  min-width: 32rem;
   width: 45%;
   border-radius: 50px;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
@@ -310,7 +327,6 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   color: #fff;
-  font-size: 1.6rem;
 }
 .blockreview-mailing .input input[type=submit]:hover {
   cursor: pointer;
@@ -334,6 +350,7 @@
 .footer__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer ul {
   list-style: url(../img/list-style.png);
@@ -344,6 +361,7 @@
   margin-bottom: 3.5rem;
 }
 .footer ul li {
+  margin-left: 3rem;
   margin-bottom: 3rem;
 }
 .footer hr {
