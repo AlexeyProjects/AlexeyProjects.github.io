@@ -21,6 +21,21 @@
 		padding: 1rem;
 	}
 }
+@media screen and (max-width: 1008px){
+	.blockdevelopment__content-text{
+		animation-name: slideUp;
+  		animation-duration: 1s;
+  		animation-timing-function: ease-in-out; 
+  		animation-delay: 0;
+	}
+	.blockdevelopment__content img{
+		animation-name: slideDown;
+  		animation-duration: 1s;
+  		animation-timing-function: ease-in-out; 
+  		animation-delay: 0;
+	}
+
+}
 @media screen and (max-width: 600px){
 	.blockscience__list-table img{
 		max-width: 100%;
@@ -90,4 +105,125 @@
 	.blockscience__list-table{
 		text-align: center;
 	}
+}
+/* animation media */
+@media screen and (max-width: 515px){
+	.blockdevelopment__list-table__first {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.blockdevelopment__list-table__second {
+  animation-name: slideUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.blockdevelopment__list-table__third {
+  animation-name: slideright;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.blockdevelopment__list-table__fourth {
+  animation-name: slideDown;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.blockdevelopment__list-table__fifth {
+  animation-name: slideDown;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+}
+@media screen and (max-width: 390px){
+	.blockdevelopment__list-table__first {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.blockdevelopment__list-table__second {
+  animation-name: slideright;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.blockdevelopment__list-table__third {
+  animation-name: slideleft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.blockdevelopment__list-table__fourth {
+  animation-name: slideright;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.blockdevelopment__list-table__fifth {
+  animation-name: slideDown;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+}
+@media screen and (max-width: 1050px){
+	.blockscience__list-table__first {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+	.blockscience__list-table__second {
+  animation-name: slideright;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+	.blockscience__list-table__third {
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+}
+@media screen and (max-width: 700px){
+	.blockscience__list-table__first {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+	.blockscience__list-table__second {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+	.blockscience__list-table__third {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+}
+@media screen and (max-width: 765px){
+	.blockproject-list__table-first {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.blockproject-list__table-second {
+  animation-name: slideright;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.blockproject-list__table-third {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.blockproject-list__table-fourth {
+  animation-name: slideright;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
 }
