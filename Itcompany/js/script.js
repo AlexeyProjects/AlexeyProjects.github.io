@@ -1,4 +1,4 @@
-	$(document).ready(function() {
+jQuery(function($){
 		var menuBtn = $('.blockstart-header__nav-btn');
 		var menu = $('.blockstart-header__nav-bar');
 
