@@ -21,17 +21,18 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div class="blockstart">
+		<div class="blockstart" id="main">
 			<div class="blockstart-header">
 				<div class="container">
 				<div class="blockstart-header__nav">
 				<ul class="blockstart-header__nav-bar">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Наши проекты</a></li>
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="#main">Главная</a></li>
+					<li><a href="#Our">О нас</a></li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#project">Наши проекты</a></li>
+					<li><a href="#contacts">Контакты</a></li>
 				</ul>
+				<div class="icon-menu blockstart-header__nav-btn"></div>
 				</div>
 			</div>
 			<hr>
@@ -45,7 +46,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="blockservices">
+		<div class="blockservices" id="Our">
 			<div class="container">
 				<div class="blockservices__heading wow animate__animated animate__fadeInDown">
 					<h1>Мы создаем мобильные приложения
@@ -93,7 +94,7 @@
 				<div class="btn wow animate__animated animate__fadeInUp">Все услуги</div>
 			</div>
 		</div>
-		<div class="blockdevelopment">
+		<div class="blockdevelopment" id="services">
 			<div class="container">
 
 					<div class="blockdevelopment__content">
@@ -170,7 +171,7 @@
 			<hr>	
 			</div>
 		</div>
-		<div class="blockproject">
+		<div class="blockproject" id="project">
 			<div class="container">
 				<div class="blockproject-heading wow">
 					<h1>Наши проекты</h1>
@@ -185,7 +186,7 @@
 				<div class="btn wow animate__animated animate__fadeInUp" data-wow-delay="1s">Все проекты</div>
 			</div>
 		</div>
-		<div class="blockreview">
+		<div class="blockreview" id="contacts">
 			<div class="container">
 				<div class="blockreview-heading">
 					<h1>Видео о нашей работе</h1>
@@ -209,7 +210,7 @@
 		</div>
 		<div class="footer">
 			<div class="container">
-				<div class="footer__list">	
+				<div class="footer__list wow">	
 				<ul class="Contacts">
 					<p>Контактная информация</p>
 					<li><a href="#">test@test.ru</a></li>
@@ -242,7 +243,9 @@
 			<p class="copyright">(с) 2019. Все права защищены.</p>
 				</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
 		<script src="js/wow.min.js"></script>
 		<script>	
 		var wow = new WOW;

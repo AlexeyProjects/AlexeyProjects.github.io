@@ -1,15 +1,30 @@
-$(document).ready(function() {
-				var menuBtn = $('.top-nav_btn');
-				var menu = $('.top-nav_menu');
-				var sidebarBtn = $('.left-sidebar_btn');
-				var sidebarmenu = $('.left-sidebar_menu');
+	$(document).ready(function() {
+		var menuBtn = $('.blockstart-header__nav-btn');
+		var menu = $('.blockstart-header__nav-bar');
 
-				menuBtn.on('click', function (event){
-					event.preventDefault();
-					menu.toggleClass('top-nav_menu__active');
-			});
-				sidebarBtn.on('click', function (event){
-					event.preventDefault();
-					sidebarmenu.toggleClass('left-sidebar_menu__active');
-			});
+
+		menuBtn.on('click', function (event){
+			event.preventDefault();
+			menu.toggleClass('blockstart-header__nav-bar__active');
+	});
+});
+$(document).ready(function(){
+
+	// = Добавляем ссылку наверх к заголовку
+
+	// = Вешаем событие прокрутки к нужному месту
+	//	 на все ссылки якорь которых начинается на #
+	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+		e.preventDefault();
+
+		var target = this.hash,
+		$target = $(target);
+
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 900, 'swing', function () {
+			window.location.hash = target;
 		});
+	});
+
+});
