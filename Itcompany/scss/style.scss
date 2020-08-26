@@ -8,8 +8,9 @@
 	&-header__nav{
 		display: flex;
 		justify-content: flex-end;
+		overflow: hidden;
 		.icon-menu{
-			
+			z-index: 999;
 		}
 		&-bar{
 			display: flex;
@@ -17,6 +18,7 @@
 			flex-wrap: wrap;
 			list-style: none;
 			width: 60rem;
+			z-index: 999;
 			&__active{
 				flex-direction: column;
 				justify-content: flex-start;
@@ -89,8 +91,14 @@
 		max-width: 73.9rem;
 		margin: 11rem auto 7rem auto;
 		text-align: center;
+		z-index: -2;
+			animation-name: slideUp;
+  			animation-duration: 1s;
+  			animation-timing-function: ease-in-out; 
+  			animation-delay: 0;
 		h1{
 			line-height: 5.2rem;
+
 		}
 		p{
 			margin-top: 5rem;

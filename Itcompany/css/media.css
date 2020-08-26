@@ -108,6 +108,13 @@
 }
 /* leftsidebar */
 @media screen and (max-width: 550px){
+	.blockstart{
+		height: 60rem;
+		
+	}
+	.blockstart-content{
+		margin-top: 15rem;
+	}
 	.icon-menu{
 		display: none;
 		position: fixed;
@@ -116,9 +123,11 @@
 		display: flex;
 		justify-content: flex-start;
 		padding: 2rem;
+		z-index: 999;
 	}
 	.blockstart-header__nav-bar{
 		display: none;
+		z-index: 999;
 	}
 	.blockstart-header__nav-bar__active{
 		display: flex;

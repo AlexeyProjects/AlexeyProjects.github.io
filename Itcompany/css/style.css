@@ -9,6 +9,10 @@
 .blockstart-header__nav {
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
+}
+.blockstart-header__nav .icon-menu {
+  z-index: 999;
 }
 .blockstart-header__nav-bar {
   display: flex;
@@ -16,6 +20,7 @@
   flex-wrap: wrap;
   list-style: none;
   width: 60rem;
+  z-index: 999;
 }
 .blockstart-header__nav-bar__active {
   flex-direction: column;
@@ -84,6 +89,11 @@
   max-width: 73.9rem;
   margin: 11rem auto 7rem auto;
   text-align: center;
+  z-index: -2;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
 }
 .blockservices__heading h1 {
   line-height: 5.2rem;
