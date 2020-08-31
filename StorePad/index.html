@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>StorePad</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/media.css">
+
+		
+		<!-- Custom styles for this template -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!--header leftmenu-->
+		<div class="leftmenu">
+			<div class="nav">
+				<a href="#"><img src="img/logotype.png" alt="Логотип"></a>
+			<ul class="navbar">
+				
+				<li><a href="#"><div class="icon imgMain"></div>Главная</a></li>
+				<li><a href="#"><div class="icon imgOrder"></div>Заказы</a></li>
+				<li><a href="#"><div class="icon imgClients"></div>Клиенты</a></li>
+				<li><a href="#"><div class="icon imgDisplay"></div>Дисплей</a></li>
+			</ul>
+			</div>
+			<hr>
+		</div>
+		<!--header leftmenu-->
+		<!--header main-->
+		<div class="main">
+			<!--header header-->
+			<div class="header">
+			<div class="personalAreaBar">
+				<a href="#"><img src="img/avatar.png" alt="Аватар" class="avatar"><p class="name">Lestate15</p></a>
+				<a href="#"><img src="img/notification.png" alt="Уведомления"></a>
+			</div>
+			</div>
+			<!--header header-->
+
+			<!--header content-->
+			<div class="content">
+				<table id="example" class="display" style="width:100%" cellspacing="0">
+        <thead class="c1 padding">
+            <tr class="c1">
+                <th class="t1">Display ID <div class="iconDownt1 rotate"></div> </th>
+                <th class="t2">Order ID <div class="iconDownt2"></div></th>
+                <th class="t3">Дата Заказа <div class="iconDownt3"></div></th>
+                <th class="t4">Клиент <div class="iconDownt4"></div></th>
+                <th class="t5">Сумма <div class="iconDownt5"></div></th>
+                <th class="t6">Скидка <div class="iconDownt6"></div></th>
+                <th class="t7">Итого <div class="iconDownt7"></div></th>
+                <th class="t8">Статус заказа <div class="iconDownt8"></div></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="c1">
+                <th>Display ID </th>
+                <th>Order ID </th>
+                <th>Дата Заказа </th>
+                <th>Клиент </th>
+                <th>Сумма </th>
+                <th>Скидка </th>
+                <th>Итого </th>
+                <th>Статус заказа </th>
+            </tr>
+        </tfoot>
+    </table>
+			</div>
+			<!--header content-->
+			
+		</div>
+		<!--header main-->
+		<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+		<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js" ></script>
+
+		<script>
+			$(document).ready(function() {
+    				$('#example').DataTable( {
+        "ajax": '../ajax/data/arrays.txt',
+        "iDisplayLength": 100,
+        "lengthChange": false,
+        "searching": false,
+        "info": false,
+        "paging": false
+    } 
+    				
+    );
+} );
+		</script>	
+		<script src="../js/script.js" ></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	</body>
+
+</html>
